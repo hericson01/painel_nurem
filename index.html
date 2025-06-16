@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remoções NUREM</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'><text y='60' font-size='60'>🚑</text></svg>">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header, footer {
+            width: 100%;
+            background: #1c6bd3;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .content {
+            text-align: center;        
+        }
+
+        iframe {
+            margin-top: 5px;
+            width: 100%;
+            height: calc(100vh - 200px); /* Ajusta a altura considerando o header e footer */
+            border: none;
+        }
+        .note {
+            background-color: #fff3cd;
+            width: 70%;
+            padding: 15px;
+            margin: 10px auto 10px auto;
+            border-left: 5px solid #ffc107;
+            border-radius: 4px;
+            text-align: center;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: calc(100vh - 150px); /* Ajuste para telas menores */
+            }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #1c6bd3;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        body {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Painel de Remoções NUREM</h1>
+    </header>
+    <div class="content">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYjBjZjE4NTEtYWNkMy00M2VjLThmNzEtYjllZWFhNWVlMjFmIiwidCI6ImQ3MTBlOTk3LTI3ZTctNGZhNi05ZGFlLThmMTkwNzRmMmI3ZSJ9" allowFullScreen="true"></iframe>
+    </div>
+    <div class="note">
+      <strong>Observação:</strong> Este painel não possui caráter institucional por parte do IGESDF. Seu uso é exclusivo para apoio técnico-operacional da área.
+    </div>
+  </div>
+    <!-- Exemplo de footer fixo -->
+  <footer>
+    Desenvolvido por: Hericson Henrique |
+    <a href="https://www.linkedin.com/in/hericsonhenrique" target="_blank" style="color:#ffffff; text-decoration:underline;">
+      LinkedIn
+    </a> |
+    <a href="https://api.whatsapp.com/send?phone=556196332956" target="_blank" style="color:#ffffff; text-decoration:underline;">
+      WhatsApp
+    </a>
+  </footer>
+</body>
+</html>
