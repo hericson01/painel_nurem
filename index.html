@@ -26,25 +26,39 @@
         iframe {
             margin-top: 5px;
             width: 100%;
-            height: calc(100vh - 200px); /* Ajusta a altura considerando o header e footer */
+            height: calc(100vh - 100px); /* Ajusta a altura considerando o header e footer */
             border: none;
         }
         .note {
             background-color: #fff3cd;
             width: 70%;
+            /* max-width: 900px; */
             padding: 15px;
-            margin: 10px auto 10px auto;
+            margin: 0 auto;
             border-left: 5px solid #ffc107;
             border-radius: 4px;
             text-align: center;
             display: block;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 70px; /* fica acima do footer fixo */
+            z-index: 999;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            font-size: 14px;
         }
 
         @media (max-width: 768px) {
-            iframe {
-                height: calc(100vh - 150px); /* Ajuste para telas menores */
+            .note {
+            width: calc(100% - 20px);
+            left: 10px;
+            transform: none;
+            bottom: 90px;
+            font-size: 12px;
             }
         }
+
+        
 
         footer {
             position: fixed;
@@ -63,9 +77,9 @@
     </style>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>Painel de Remoções NUREM</h1>
-    </header>
+    </header> -->
     <div class="content">
         <iframe src="https://powernote.xyz/view?r=eyJrIjoiYjBjZjE4NTEtYWNkMy00M2VjLThmNzEtYjllZWFhNWVlMjFmIiwidCI6ImQ3MTBlOTk3LTI3ZTctNGZhNi05ZGFlLThmMTkwNzRmMmI3ZSJ9" allowFullScreen="true"></iframe>
     </div>
